@@ -128,10 +128,10 @@ const CourseDetailPage = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-primary">
+        <section className="py-20 bg-gradient-to-r from-primary to-primary/90">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">Interested in {course.title}?</h2>
-            <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Get in touch with us to learn more about admissions, batch timings, and fees.</p>
+            <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">Get in touch with us to learn more about admissions, batch timings, and fees.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button onClick={() => setCallbackOpen(true)} size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold">
                 Request Callback

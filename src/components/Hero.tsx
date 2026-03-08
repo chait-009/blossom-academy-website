@@ -31,15 +31,6 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 w-full max-w-3xl">
-          {stats.map((s) => (
-            <div key={s.label} className="flex flex-col items-center gap-2 p-6 rounded-xl bg-card shadow-md border border-border">
-              <s.icon className="h-8 w-8 text-secondary" />
-              <span className="text-2xl font-bold text-primary">{s.value}</span>
-              <span className="text-sm text-muted-foreground">{s.label}</span>
-            </div>
-          ))}
-        </div>
       </div>
       <RequestCallbackDialog open={callbackOpen} onOpenChange={setCallbackOpen} />
     </section>
