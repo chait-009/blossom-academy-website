@@ -1,4 +1,4 @@
-import { Phone, MapPin, Instagram } from "lucide-react";
+import { Phone, MapPin, Instagram, Mail, Youtube, Facebook, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -16,6 +16,21 @@ const Footer = () => {
             </div>
             <p className="text-sm text-primary-foreground/80">Empowering Minds For Eternal Futures</p>
             <p className="text-xs font-semibold tracking-wider text-secondary">BELIEVE – ACHIEVE – SUCCEED</p>
+            {/* Social Media */}
+            <div className="flex items-center gap-3 pt-2">
+              <a href="https://www.instagram.com/blossom_science_academy/" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors" aria-label="Instagram">
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a href="https://www.facebook.com/blossomscienceacademy" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors" aria-label="Facebook">
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a href="https://www.youtube.com/@blossomscienceacademy" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors" aria-label="YouTube">
+                <Youtube className="h-4 w-4" />
+              </a>
+              <a href="mailto:contact@blossomscienceacademy.in" className="h-9 w-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors" aria-label="Email">
+                <Mail className="h-4 w-4" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -51,18 +66,31 @@ const Footer = () => {
                 <MapPin className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
                 <span>Chinchwad, Pune</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Instagram className="h-4 w-4 text-secondary" />
-                <a href="https://www.instagram.com/blossom_science_academy/" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">
-                  @blossom_science_academy
-                </a>
+              <div className="flex items-start gap-2">
+                <Mail className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
+                <div className="space-y-1">
+                  <a href="mailto:contact@blossomscienceacademy.in" className="block hover:text-secondary transition-colors">contact@blossomscienceacademy.in</a>
+                  <a href="mailto:admission@blossomscienceacademy.in" className="block hover:text-secondary transition-colors">admission@blossomscienceacademy.in</a>
+                  <a href="mailto:blossomscienceacademy@gmail.com" className="block hover:text-secondary transition-colors">blossomscienceacademy@gmail.com</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-primary-foreground/20 text-center text-xs text-primary-foreground/60">
-          © {year} Blossom Science Academy. All rights reserved.
+        <div className="mt-10 pt-6 border-t border-primary-foreground/20 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-primary-foreground/60">
+          <p>© {year} Blossom Science Academy. All rights reserved.</p>
+          <p>
+            Developed by{" "}
+            <a
+              href="https://chaitanyashinde.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-secondary hover:text-secondary/80 transition-colors inline-flex items-center gap-1"
+            >
+              CHAITANYA SHINDE <ExternalLink className="h-3 w-3" />
+            </a>
+          </p>
         </div>
       </div>
     </footer>

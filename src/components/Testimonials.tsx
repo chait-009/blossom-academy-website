@@ -1,5 +1,7 @@
-import { Star } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import { motion, AnimatePresence } from "framer-motion";
 
 const testimonials = [
   {
@@ -40,27 +42,36 @@ const testimonials = [
   },
 ];
 
-const TestimonialCard = ({ t }: { t: typeof testimonials[0] }) => (
-  <div className="bg-card rounded-xl p-6 border border-border shadow-sm flex flex-col min-w-[280px] max-w-[320px] shrink-0 md:min-w-0 md:max-w-none">
-    <div className="flex gap-0.5 mb-3">
-      {Array.from({ length: t.rating }).map((_, i) => (
-        <Star key={i} className="h-4 w-4 fill-secondary text-secondary" />
-      ))}
-    </div>
-    <p className="text-sm text-muted-foreground flex-1 leading-relaxed">"{t.text}"</p>
-    <div className="mt-4 pt-4 border-t border-border">
-      <p className="font-semibold text-foreground text-sm">{t.name}</p>
-      <p className="text-xs text-muted-foreground">{t.role}</p>
-    </div>
-  </div>
-);
-
 const Testimonials = () => {
-  // Double the items for infinite scroll effect
-  const scrollItems = [...testimonials, ...testimonials];
+  const [current, setCurrent] = useState(0);
+  const [direction, setDirection] = useState(1);
+
+  const next = useCallback(() => {
+    setDirection(1);
+    setCurrent((prev) => (prev + 1) % testimonials.length);
+  }, []);
+
+  const prev = useCallback(() => {
+    setDirection(-1);
+    setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  }, []);
+
+  // Auto-advance every 5s
+  useEffect(() => {
+    const timer = setInterval(next, 5000);
+    return () => clearInterval(timer);
+  }, [next]);
+
+  const t = testimonials[current];
+
+  const variants = {
+    enter: (dir: number) => ({ x: dir > 0 ? 80 : -80, opacity: 0 }),
+    center: { x: 0, opacity: 1 },
+    exit: (dir: number) => ({ x: dir > 0 ? -80 : 80, opacity: 0 }),
+  };
 
   return (
-    <section id="testimonials" className="py-20">
+    <section id="testimonials" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <ScrollReveal>
           <div className="text-center mb-14">
@@ -72,21 +83,65 @@ const Testimonials = () => {
           </div>
         </ScrollReveal>
 
-        {/* Desktop grid */}
-        <div className="hidden md:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {testimonials.map((t, i) => (
-            <ScrollReveal key={t.name} delay={i * 0.1}>
-              <TestimonialCard t={t} />
-            </ScrollReveal>
-          ))}
-        </div>
+        <div className="max-w-2xl mx-auto">
+          <div className="relative min-h-[250px] flex items-center">
+            <AnimatePresence mode="wait" custom={direction}>
+              <motion.div
+                key={current}
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.35, ease: "easeInOut" }}
+                className="w-full"
+              >
+                <div className="bg-card rounded-2xl p-8 md:p-10 border border-border shadow-md text-center">
+                  <div className="flex justify-center gap-1 mb-4">
+                    {Array.from({ length: t.rating }).map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-secondary text-secondary" />
+                    ))}
+                  </div>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed italic">
+                    "{t.text}"
+                  </p>
+                  <div className="mt-6 pt-4 border-t border-border">
+                    <p className="font-semibold text-foreground">{t.name}</p>
+                    <p className="text-sm text-muted-foreground">{t.role}</p>
+                  </div>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
 
-        {/* Mobile infinite scroll */}
-        <div className="md:hidden overflow-hidden">
-          <div className="flex gap-4 animate-infinite-scroll">
-            {scrollItems.map((t, i) => (
-              <TestimonialCard key={`${t.name}-${i}`} t={t} />
-            ))}
+          {/* Controls */}
+          <div className="flex items-center justify-center gap-4 mt-6">
+            <button
+              onClick={prev}
+              className="h-10 w-10 rounded-full border border-border bg-card flex items-center justify-center hover:bg-primary/10 transition-colors"
+              aria-label="Previous testimonial"
+            >
+              <ChevronLeft className="h-5 w-5 text-foreground" />
+            </button>
+
+            <div className="flex gap-2">
+              {testimonials.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => { setDirection(i > current ? 1 : -1); setCurrent(i); }}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${i === current ? "w-8 bg-primary" : "w-2.5 bg-border hover:bg-primary/40"}`}
+                  aria-label={`Go to testimonial ${i + 1}`}
+                />
+              ))}
+            </div>
+
+            <button
+              onClick={next}
+              className="h-10 w-10 rounded-full border border-border bg-card flex items-center justify-center hover:bg-primary/10 transition-colors"
+              aria-label="Next testimonial"
+            >
+              <ChevronRight className="h-5 w-5 text-foreground" />
+            </button>
           </div>
         </div>
       </div>
