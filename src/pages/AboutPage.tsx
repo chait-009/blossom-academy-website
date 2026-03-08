@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEOHead from "@/components/SEOHead";
 import { Target, Heart, TrendingUp, Users, BookOpen, Award } from "lucide-react";
 
 const values = [
@@ -18,6 +19,7 @@ const stats = [
 const AboutPage = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title="About Us | Blossom Science Academy – Chinchwad, Pune" description="Learn about Blossom Science Academy's mission, values, and expert faculty. Premier coaching for 8th-12th SSC/CBSE, JEE, NEET, MHT-CET in Chinchwad." canonical="/about" />
       <Navbar />
       <main className="pt-16">
         {/* Hero */}
