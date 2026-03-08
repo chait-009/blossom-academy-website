@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEOHead from "@/components/SEOHead";
 import Contact from "@/components/Contact";
 import { Phone, MapPin, Clock, MessageCircle, Mail, Instagram, Facebook, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
