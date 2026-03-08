@@ -10,6 +10,7 @@ const navLinks = [
   { label: "Courses", href: "/courses" },
   { label: "Why Us", href: "/#why-us" },
   { label: "Contact", href: "/contact" },
+  { label: "Careers", href: "/careers" },
 ];
 
 const Navbar = () => {

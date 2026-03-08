@@ -41,6 +41,7 @@ const App = () => (
           <Route path="/courses/:courseId" element={<CourseDetailPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/request-callback" element={<RequestCallbackPage />} />
+          <Route path="/careers" element={<CareersPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
