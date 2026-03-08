@@ -1,14 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { GraduationCap, Users, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import RequestCallbackDialog from "@/components/RequestCallbackDialog";
-
-const stats = [
-  { icon: GraduationCap, value: "5+", label: "Years of Excellence" },
-  { icon: Users, value: "1000+", label: "Students Guided" },
-  { icon: Award, value: "20+", label: "Expert Faculty" },
-];
 
 const Hero = () => {
   const [callbackOpen, setCallbackOpen] = useState(false);
