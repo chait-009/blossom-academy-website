@@ -13,6 +13,7 @@ import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import RequestCallbackPage from "./pages/RequestCallbackPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
