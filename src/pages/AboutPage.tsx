@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEOHead from "@/components/SEOHead";
 import { Target, Heart, TrendingUp, Users, BookOpen, Award } from "lucide-react";
 
 const values = [
