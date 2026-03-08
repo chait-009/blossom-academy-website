@@ -16,6 +16,7 @@ const CoursesPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title="Courses | Blossom Science Academy – SSC, CBSE, JEE, NEET, MHT-CET" description="Explore coaching courses for 8th-12th SSC & CBSE boards, IIT-JEE, NEET, MHT-CET, NDA & IISER foundation at Blossom Science Academy, Chinchwad." canonical="/courses" jsonLd={{ "@context": "https://schema.org", "@type": "ItemList", name: "Courses at Blossom Science Academy", numberOfItems: courses.length, itemListElement: courses.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.title, url: `https://blossomscienceacademy.com/courses/${c.id}` })) }} />
       <Navbar />
       <main className="pt-16">
         <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 py-20">

@@ -49,6 +49,7 @@ const socialLinks = [
 const ContactPage = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title="Contact Us | Blossom Science Academy – Chinchwad, Pune" description="Get in touch with Blossom Science Academy for admissions, fee structure, batch schedules. Call 99221 97616 or visit us in Chinchwad, Pune." canonical="/contact" jsonLd={{ "@context": "https://schema.org", "@type": "ContactPage", name: "Contact Blossom Science Academy", url: "https://blossomscienceacademy.com/contact" }} />
       <Navbar />
       <main className="pt-16">
         {/* Hero */}

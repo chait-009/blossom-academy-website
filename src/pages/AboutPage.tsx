@@ -19,6 +19,7 @@ const stats = [
 const AboutPage = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title="About Us | Blossom Science Academy – Chinchwad, Pune" description="Learn about Blossom Science Academy's mission, values, and expert faculty. Premier coaching for 8th-12th SSC/CBSE, JEE, NEET, MHT-CET in Chinchwad." canonical="/about" />
       <Navbar />
       <main className="pt-16">
         {/* Hero */}
