@@ -4,6 +4,7 @@ import AnnouncementBanner from "@/components/AnnouncementBanner";
 import About from "@/components/About";
 import Courses from "@/components/Courses";
 import WhyUs from "@/components/WhyUs";
+import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -17,6 +18,7 @@ const Index = () => {
       <About />
       <Courses />
       <WhyUs />
+      <Testimonials />
       <Contact />
       <Footer />
       <WhatsAppButton />

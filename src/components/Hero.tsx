@@ -1,14 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { GraduationCap, Users, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import RequestCallbackDialog from "@/components/RequestCallbackDialog";
-
-const stats = [
-  { icon: GraduationCap, value: "5+", label: "Years of Excellence" },
-  { icon: Users, value: "1000+", label: "Students Guided" },
-  { icon: Award, value: "20+", label: "Expert Faculty" },
-];
 
 const Hero = () => {
   const [callbackOpen, setCallbackOpen] = useState(false);
@@ -38,15 +31,6 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 w-full max-w-3xl">
-          {stats.map((s) => (
-            <div key={s.label} className="flex flex-col items-center gap-2 p-6 rounded-xl bg-card shadow-md border border-border">
-              <s.icon className="h-8 w-8 text-secondary" />
-              <span className="text-2xl font-bold text-primary">{s.value}</span>
-              <span className="text-sm text-muted-foreground">{s.label}</span>
-            </div>
-          ))}
-        </div>
       </div>
       <RequestCallbackDialog open={callbackOpen} onOpenChange={setCallbackOpen} />
     </section>
