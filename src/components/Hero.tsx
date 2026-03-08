@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Users, Award } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import RequestCallbackDialog from "@/components/RequestCallbackDialog";
 
 const stats = [
   { icon: GraduationCap, value: "5+", label: "Years of Excellence" },
@@ -8,6 +11,8 @@ const stats = [
 ];
 
 const Hero = () => {
+  const [callbackOpen, setCallbackOpen] = useState(false);
+
   return (
     <section id="home" className="relative pt-16 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
@@ -23,19 +28,16 @@ const Hero = () => {
           Believe – Achieve – Succeed
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <a href="#contact">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold text-base px-8">
-              Enroll Now
-            </Button>
-          </a>
-          <a href="#courses">
+          <Button onClick={() => setCallbackOpen(true)} size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold text-base px-8">
+            Enroll Now
+          </Button>
+          <Link to="/courses">
             <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-base px-8">
               View Courses
             </Button>
-          </a>
+          </Link>
         </div>
 
-        {/* Stats */}
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 w-full max-w-3xl">
           {stats.map((s) => (
             <div key={s.label} className="flex flex-col items-center gap-2 p-6 rounded-xl bg-card shadow-md border border-border">
@@ -46,6 +48,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
+      <RequestCallbackDialog open={callbackOpen} onOpenChange={setCallbackOpen} />
     </section>
   );
 };

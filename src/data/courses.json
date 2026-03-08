@@ -1,0 +1,588 @@
+{
+  "courses": [
+    {
+      "id": "8th-state-board",
+      "title": "8th Standard - State Board",
+      "shortDescription": "Complete Maharashtra Board preparation with strong foundation in all subjects",
+      "description": "Our 8th Standard State Board program focuses on building strong conceptual clarity while preparing students for high school. We cover the complete Maharashtra State Board (Balbharati) syllabus including all three languages.",
+      "image": "/courses/8th-state-board.png",
+      "duration": "Full Academic Year",
+      "eligibility": "8th Standard Students",
+      "batchSize": "20-25 Students/batch",
+      "category": "State Board",
+      "highlights": [
+        "Complete Balbharati syllabus coverage",
+        "Focus on Grammar & Writing Skills",
+        "Regular chapter tests and assessments",
+        "Doubt clearing sessions",
+        "Study material and notes provided",
+        "Parent-teacher meetings"
+      ],
+      "syllabus": [
+        {
+          "subject": "Mathematics",
+          "topics": ["Rational & Irrational Numbers", "Parallel Lines & Transversals", "Indices & Cube Root", "Altitudes & Medians", "Expansion Formulae", "Factorisation", "Variation", "Quadrilaterals", "Discount & Commission", "Polynomials", "Statistics", "Equations in One Variable", "Congruence of Triangles", "Compound Interest", "Area", "Surface Area & Volume", "Circle: Chord & Arc"]
+        },
+        {
+          "subject": "General Science",
+          "topics": ["Living World & Microbes", "Health & Diseases", "Force & Pressure", "Current Electricity & Magnetism", "Inside the Atom", "Composition of Matter", "Metals & Non-metals", "Pollution", "Disaster Management", "Cell & Cell Organelles", "Human Body & Organ Systems", "Acid & Base", "Chemical Change & Bond", "Heat", "Sound", "Reflection of Light", "Man made Materials", "Ecosystems", "Life Cycle of Stars"]
+        },
+        {
+          "subject": "History & Civics",
+          "topics": ["Sources of History", "Europe and India", "Effects of British Rule", "Freedom Struggle of 1857", "Social & Religious Reforms", "Civil Disobedience Movement", "Struggle for Equality", "India gains Independence", "Introduction to Parliamentary System", "The Indian Parliament", "Union Executive", "Indian Judicial System", "State Government", "Bureaucracy"]
+        },
+        {
+          "subject": "Geography",
+          "topics": ["Local Time & Standard Time", "Interior of the Earth", "Humidity & Clouds", "Structure of Ocean Floor", "Ocean Currents", "Land Use", "Population", "Industries", "Map Scale", "Field Visit"]
+        },
+        {
+          "subject": "English (My English Book Eight)",
+          "topics": ["Be The Best", "Androcles and the Lion", "Trees are the Kindest Things", "Miss Slippery", "Try Again", "The House Builder", "The Little River", "The Plate of Gold", "The Kite Festival", "The Last Leaf", "The Vet", "Revolutionary Steps in Surgery", "Ramanujan", "Grammar & Writing Skills"]
+        },
+        {
+          "subject": "Marathi (Sulabhbharati)",
+          "topics": ["आम्ही चालू हा पुढे वारसा", "मी चित्रकार कसा झालो", "प्रभात", "आपण सारे एक", "घाटात घाट वरंधाघाट", "आभाळाची अम्ही लेकरे", "नातवंडांस पत्र", "गिर्यारोहणाचा अनुभव", "झुळूक", "आम्ही हवे आहोत का", "जीवन गाणे", "शब्दकोश", "व्याकरण"]
+        },
+        {
+          "subject": "Hindi (Sulabhbharati)",
+          "topics": ["हे मातृभूमि", "वारिस कौन", "नाखून क्यों बढ़ते हैं", "गाँव-शहर", "मधुबन", "जरा प्यार से बोलना सीख लीजे", "मेरे रजा साहब", "पूर्ण विश्राम", "अनमोल वाणी", "खेती से आई तब्दीलियाँ", "स्वयं अध्ययन", "व्याकरण"]
+        }
+      ],
+      "features": [
+        "Interactive classroom teaching",
+        "Language lab sessions",
+        "Regular homework and assignments",
+        "Monthly progress reports",
+        "Practical lab sessions"
+      ],
+      "schedule": "Monday to Saturday, 4-5 hours/day"
+    },
+    {
+      "id": "9th-state-board",
+      "title": "9th Standard - State Board",
+      "shortDescription": "Comprehensive preparation for crucial 9th standard with board focus",
+      "description": "Our 9th Standard State Board program is designed to help students master the Balbharati curriculum while building a strong foundation for 10th board exams. We emphasize conceptual understanding and language mastery.",
+      "image": "/courses/9th-state-board.png",
+      "duration": "Full Academic Year",
+      "eligibility": "9th Standard Students",
+      "batchSize": "20-25 Students",
+      "category": "State Board",
+      "highlights": [
+        "Complete Maharashtra Board syllabus",
+        "Focus on Math & Science concepts",
+        "Language Writing Skills workshops",
+        "Board exam preparation strategy",
+        "Practical sessions included",
+        "Study material provided"
+      ],
+      "syllabus": [
+        {
+          "subject": "Maths Part-I (Algebra)",
+          "topics": ["Sets", "Real Numbers", "Polynomials", "Ratio and Proportion", "Linear Equations in Two Variables", "Financial Planning", "Statistics"]
+        },
+        {
+          "subject": "Maths Part-II (Geometry)",
+          "topics": ["Basic Concepts in Geometry", "Parallel Lines", "Triangles", "Construction of Triangles", "Quadrilaterals", "Circle", "Coordinate Geometry", "Trigonometry", "Surface Area and Volume"]
+        },
+        {
+          "subject": "Science & Technology",
+          "topics": ["Laws of Motion", "Work and Energy", "Current Electricity", "Measurement of Matter", "Acids, Bases and Salts", "Classification of Plants", "Energy Flow in Ecosystem", "Useful and Harmful Microbes", "Environmental Management", "ICT", "Reflection of Light", "Study of Sound", "Carbon: An Important Element", "Substances in Common Use", "Life Processes", "Heredity and Variation", "Biotechnology", "Space Telescopes"]
+        },
+        {
+          "subject": "Social Science",
+          "topics": ["History: India Events after 1960", "History: Economic Development", "History: Education", "History: Empowerment of Women", "History: Science & Technology", "History: Industry & Trade", "Pol Sci: Post World War Politics", "Pol Sci: India's Foreign Policy", "Pol Sci: India's Defence System", "Pol Sci: United Nations", "Geography: Distributional Maps", "Geography: Endogenetic/Exogenetic Movements", "Geography: Precipitation", "Geography: International Date Line", "Geography: Introduction to Economics", "Geography: Trade & Tourism"]
+        },
+        {
+          "subject": "English (Kumarbharati)",
+          "topics": ["Life", "A Synopsis-The Swiss Family Robinson", "Have you ever seen...?", "The Necklace", "Invictus", "A True Story of Sea Turtles", "Somebody's Mother", "The Fall of Troy", "Coromandel Fishers", "The Topper", "The Storyteller", "The Tempest", "Grammar", "Writing Skills"]
+        },
+        {
+          "subject": "Marathi (Aksharbharati)",
+          "topics": ["सर्वात्मका शिवसुंदरा", "संतवाणी", "बेटा, मी ऐकतो आहे", "जी. पी.", "व्यायामाचे महत्त्व", "ऑलिंपिक वर्तुळांचा गोफ", "दिव्याच्या शोधामागचे दिव्य", "सखू आजी", "उजाड उघडे माळरानही", "कुलूप", "आभाळातल्या पाऊलवाटा", "व्याकरण", "उपयोजित लेखन"]
+        },
+        {
+          "subject": "Hindi (Lokbharati)",
+          "topics": ["चाँदनी रात", "बिल्ली का बिलुंगड़ा", "कबीर", "किताबें", "जूलिया", "ऐ सखि", "डॉक्‍टर का अपहरण", "वीरभूमि पर कुछ दिन", "वरदान माँगूँगा नहीं", "रात का चौकीदार", "निर्माणों के पावन युग में", "स्वतंत्रता गान", "व्याकरण"]
+        }
+      ],
+      "features": [
+        "Board pattern worksheets",
+        "Practical exam preparation",
+        "Weekly tests",
+        "Personalized attention",
+        "Career guidance sessions"
+      ],
+      "schedule": "Monday to Saturday, 4-5 hours/day"
+    },
+    {
+      "id": "10th-state-board",
+      "title": "10th Standard - State Board",
+      "shortDescription": "Complete SSC board exam preparation with proven success strategies",
+      "description": "Our 10th Standard State Board program is specifically designed for SSC board exam success. We provide comprehensive coverage of the entire syllabus including Languages with intensive board exam practice.",
+      "image": "/courses/10th-state-board.png",
+      "duration": "Full Academic Year",
+      "eligibility": "10th Standard Students",
+      "batchSize": "20-25 Students",
+      "category": "State Board",
+      "highlights": [
+        "Complete SSC syllabus coverage",
+        "Board exam pattern practice",
+        "Previous year papers solving",
+        "Language Grammar & Essay focus",
+        "Time management strategies",
+        "Regular mock tests"
+      ],
+      "syllabus": [
+        {
+          "subject": "Maths Part-I (Algebra)",
+          "topics": ["Linear Equations in Two Variables", "Quadratic Equations", "Arithmetic Progression", "Financial Planning", "Probability", "Statistics"]
+        },
+        {
+          "subject": "Maths Part-II (Geometry)",
+          "topics": ["Similarity", "Pythagoras Theorem", "Circle", "Geometric Constructions", "Coordinate Geometry", "Trigonometry", "Mensuration"]
+        },
+        {
+          "subject": "Science Part-I",
+          "topics": ["Gravitation", "Periodic Classification of Elements", "Chemical Reactions and Equations", "Effects of Electric Current", "Heat", "Refraction of Light", "Lenses", "Metallurgy", "Carbon Compounds", "Space Missions"]
+        },
+        {
+          "subject": "Science Part-II",
+          "topics": ["Heredity and Evolution", "Life Processes in Living Organisms Part-1 & 2", "Environmental Management", "Towards Green Energy", "Animal Classification", "Introduction to Microbiology", "Cell Biology and Biotechnology", "Social Health", "Disaster Management"]
+        },
+        {
+          "subject": "Social Science",
+          "topics": ["History: Historiography", "History: Indian Arts", "History: Mass Media", "History: Entertainment", "History: Sports", "History: Tourism", "Pol Sci: Constitution", "Pol Sci: Electoral Process", "Pol Sci: Political Parties", "Pol Sci: Social Movements", "Geography: Location & Extent", "Geography: Physiography & Drainage", "Geography: Climate", "Geography: Natural Vegetation", "Geography: Population", "Geography: Human Settlements", "Geography: Economy & Occupations", "Geography: Transport & Communication"]
+        },
+        {
+          "subject": "English (Kumarbharati)",
+          "topics": ["A Teenager's Prayer", "An Encounter of a Special Kind", "Basketful of Moonlight", "Be SMART", "His First Flight", "You Start Dying Slowly", "The Boy who Broke the Bank", "The Twins", "An Epitome of Courage", "If", "Stopping by Woods", "The World is Mine", "Bholi", "Writing Skills (Letter, Report, Speech)"]
+        },
+        {
+          "subject": "Marathi (Aksharbharati)",
+          "topics": ["तू बुद्धी दे", "संतवाणी", "शाल", "उपास", "दोन दिवस", "चुडीवाला", "फूटप्रिंट्स", "ऊर्जाशक्तीचा जागर", "औक्षण", "रंग साहित्याचे", "जंगल डायरी", "रंग मजेचे रंग उदयाचे", "हिरवंगार झाडासारखं", "बीज पेरले गेले", "उपयोजित लेखन"]
+        },
+        {
+          "subject": "Hindi (Lokbharati)",
+          "topics": ["भारत महिमा", "लक्ष्मी", "वाह रे हमदर्द", "मन", "गोवा : जैसा मैंने देखा", "गिरिधर नागर", "खुला आकाश", "गजल", "रीढ़ की हड्डी", "ठेस", "समता की ओर", "बूढ़ी काकी", "व्याकरण", "रचना विभाग"]
+        }
+      ],
+      "features": [
+        "Board exam focused teaching",
+        "Diagram practice sessions",
+        "Formula mastery programs",
+        "Writing skills development",
+        "Stream selection guidance"
+      ],
+      "schedule": "Monday to Saturday, 3 hours/day"
+    },
+    {
+      "id": "8th-cbse",
+      "title": "8th Standard - CBSE",
+      "shortDescription": "Complete CBSE curriculum with NCERT focus and modern teaching",
+      "description": "Our 8th Standard CBSE program provides comprehensive coverage of the CBSE curriculum with special emphasis on NCERT. We cover core subjects and languages comprehensively.",
+      "image": "/courses/8th-cbse-board.png",
+      "duration": "Full Academic Year",
+      "eligibility": "8th Standard Students",
+      "batchSize": "20-25 Students",
+      "category": "CBSE",
+      "highlights": [
+        "Complete NCERT syllabus coverage",
+        "Conceptual learning approach",
+        "Regular chapter tests",
+        "CBSE pattern practice",
+        "Study material provided",
+        "Practical sessions"
+      ],
+      "syllabus": [
+        {
+          "subject": "Mathematics",
+          "topics": ["Rational Numbers", "Linear Equations in One Variable", "Understanding Quadrilaterals", "Data Handling", "Squares and Square Roots", "Cubes and Cube Roots", "Comparing Quantities", "Algebraic Expressions", "Mensuration", "Exponents and Powers", "Direct and Inverse Proportions", "Factorisation", "Introduction to Graphs"]
+        },
+        {
+          "subject": "Science",
+          "topics": ["Crop Production", "Microorganisms", "Coal and Petroleum", "Combustion and Flame", "Conservation of Plants/Animals", "Reproduction in Animals", "Adolescence", "Force and Pressure", "Friction", "Sound", "Chemical Effects of Electric Current", "Some Natural Phenomena", "Light", "Stars and Solar System", "Pollution"]
+        },
+        {
+          "subject": "Social Science",
+          "topics": ["History: Trade to Territory", "History: Ruling the Countryside", "History: 1857 Revolt", "History: Women, Caste and Reform", "History: National Movement", "Geography: Resources", "Geography: Land, Soil, Water", "Geography: Agriculture", "Geography: Industries", "Geography: Human Resources", "Civics: The Indian Constitution", "Civics: Secularism", "Civics: Parliament", "Civics: Judiciary", "Civics: Marginalisation", "Civics: Law and Social Justice"]
+        },
+        {
+          "subject": "English (Honeydew)",
+          "topics": ["The Best Christmas Present", "The Tsunami", "Glimpses of the Past", "Bepin Choudhury's Lapse of Memory", "The Summit Within", "This is Jody's Fawn", "A Visit to Cambridge", "A Short Monsoon Diary", "The Great Stone Face", "Poems: The Ant and the Cricket, Geography Lesson, The Last Bargain", "Grammar"]
+        },
+        {
+          "subject": "Hindi (Vasant)",
+          "topics": ["ध्वनि", "लाख की चूड़ियाँ", "बस की यात्रा", "दीवानों की हस्ती", "चिट्ठियों की अनूठी दुनिया", "भगवान के डाकिए", "क्या निराश हुआ जाए", "यह सबसे कठिन समय नहीं", "कबीर की साखियाँ", "कामचोर", "जब सिनेमा ने बोलना सीखा", "सुदामा चरित", "जहाँ पहिया है", "पानी की कहानी"]
+        },
+        {
+          "subject": "Marathi (Sulabhbharati)",
+          "topics": ["आम्ही चालू हा पुढे वारसा", "मी चित्रकार कसा झालो", "प्रभात", "आपण सारे एक", "घाटात घाट वरंधाघाट", "आभाळाची अम्ही लेकरे", "नातवंडांस पत्र", "गिर्यारोहणाचा अनुभव", "झुळूक", "आम्ही हवे आहोत का"]
+        }
+      ],
+      "features": [
+        "NCERT line by line coverage",
+        "Interactive learning",
+        "Regular assessments",
+        "Practical experiments",
+        "Digital learning resources"
+      ],
+      "schedule": "Monday to Saturday, 4-5 hours/day"
+    },
+    {
+      "id": "9th-cbse",
+      "title": "9th Standard - CBSE",
+      "shortDescription": "CBSE curriculum mastery with board exam preparation focus",
+      "description": "Our 9th Standard CBSE program ensures complete NCERT mastery while building foundation for board exams. We focus on both conceptual understanding and exam preparation.",
+      "image": "/courses/9th-cbse-board.png",
+      "duration": "Full Academic Year",
+      "eligibility": "9th Standard Students",
+      "batchSize": "20-25 Students",
+      "category": "CBSE",
+      "highlights": [
+        "Complete NCERT coverage",
+        "Board exam preparation",
+        "Regular practice sessions",
+        "Doubt clearing classes",
+        "Study notes provided",
+        "Practical guidance"
+      ],
+      "syllabus": [
+        {
+          "subject": "Mathematics",
+          "topics": ["Number Systems", "Polynomials", "Coordinate Geometry", "Linear Equations in Two Variables", "Euclid's Geometry", "Lines and Angles", "Triangles", "Quadrilaterals", "Circles", "Heron's Formula", "Surface Areas and Volumes", "Statistics"]
+        },
+        {
+          "subject": "Science",
+          "topics": ["Matter in Our Surroundings", "Is Matter Around Us Pure", "Atoms and Molecules", "Structure of the Atom", "The Fundamental Unit of Life", "Tissues", "Motion", "Force and Laws of Motion", "Gravitation", "Work and Energy", "Sound", "Improvement in Food Resources"]
+        },
+        {
+          "subject": "Social Science",
+          "topics": ["History: French Revolution", "History: Socialism in Europe", "History: Nazism", "History: Forest Society", "Geography: India – Size and Location", "Geography: Physical Features", "Geography: Drainage", "Geography: Climate", "Geography: Population", "Pol Sci: What is Democracy", "Pol Sci: Constitutional Design", "Pol Sci: Electoral Politics", "Pol Sci: Democratic Rights", "Economics: Palampur", "Economics: People as Resource", "Economics: Poverty", "Economics: Food Security"]
+        },
+        {
+          "subject": "English (Beehive)",
+          "topics": ["The Fun They Had", "The Sound of Music", "The Little Girl", "A Truly Beautiful Mind", "The Snake and the Mirror", "My Childhood", "Reach for the Top", "Kathmandu", "If I Were You", "Poems: The Road Not Taken, Wind, Rain on the Roof", "Grammar & Composition"]
+        },
+        {
+          "subject": "Hindi (Kshitij)",
+          "topics": ["दो बैलों की कथा", "ल्हासा की ओर", "उपभोक्तावाद की संस्कृति", "साँवले सपनों की याद", "नाना साहब की पुत्री", "प्रेमचंद के फटे जूते", "मेरे बचपन के दिन", "एक कुत्ता और एक मैना", "साखियाँ एवं सबद", "वाख", "सवैये", "कैदी और कोकिला", "ग्राम श्री"]
+        },
+        {
+          "subject": "Marathi (Aksharbharati)",
+          "topics": ["सर्वात्मका शिवसुंदरा", "संतवाणी", "बेटा, मी ऐकतो आहे", "जी. पी.", "व्यायामाचे महत्त्व", "ऑलिंपिक वर्तुळांचा गोफ", "दिव्याच्या शोधामागचे दिव्य", "सखू आजी", "उजाड उघडे माळरानही", "कुलूप"]
+        }
+      ],
+      "features": [
+        "NCERT solutions practice",
+        "CBSE pattern tests",
+        "Lab practical sessions",
+        "Monthly assessments",
+        "Parent feedback system"
+      ],
+      "schedule": "Monday to Saturday, 4-5 hours/day"
+    },
+    {
+      "id": "10th-cbse",
+      "title": "10th Standard - CBSE",
+      "shortDescription": "Complete CBSE board exam preparation with success guarantee",
+      "description": "Our 10th Standard CBSE program is designed for board exam excellence. We provide complete syllabus coverage with intensive practice, previous year papers, and proven exam strategies for outstanding results.",
+      "image": "/courses/10th-cbse-board.png",
+      "duration": "Full Academic Year",
+      "eligibility": "10th Standard Students",
+      "batchSize": "20-25 Students",
+      "category": "CBSE",
+      "highlights": [
+        "Complete CBSE syllabus",
+        "Board exam strategies",
+        "Previous year papers",
+        "Sample papers practice",
+        "Practical exam preparation",
+        "Time management training"
+      ],
+      "syllabus": [
+        {
+          "subject": "Mathematics",
+          "topics": ["Real Numbers", "Polynomials", "Linear Equations", "Quadratic Equations", "Arithmetic Progressions", "Triangles", "Coordinate Geometry", "Trigonometry", "Circles", "Areas Related to Circles", "Surface Areas and Volumes", "Statistics", "Probability"]
+        },
+        {
+          "subject": "Science",
+          "topics": ["Chemical Reactions", "Acids Bases Salts", "Metals and Non-metals", "Carbon Compounds", "Life Processes", "Control and Coordination", "Reproduction", "Heredity", "Light Reflection & Refraction", "Human Eye", "Electricity", "Magnetic Effects", "Our Environment"]
+        },
+        {
+          "subject": "Social Science",
+          "topics": ["History: Nationalism in Europe", "History: Nationalism in India", "History: Global World", "History: Industrialisation", "History: Print Culture", "Geography: Resources", "Geography: Agriculture", "Geography: Minerals & Energy", "Geography: Manufacturing", "Geography: Lifelines of Economy", "Pol Sci: Power Sharing", "Pol Sci: Federalism", "Pol Sci: Gender, Religion, Caste", "Pol Sci: Political Parties", "Economics: Development", "Economics: Sectors of Economy", "Economics: Money and Credit", "Economics: Globalisation"]
+        },
+        {
+          "subject": "English (First Flight)",
+          "topics": ["A Letter to God", "Nelson Mandela", "Two Stories about Flying", "From the Diary of Anne Frank", "Glimpses of India", "Mijbil the Otter", "Madam Rides the Bus", "The Sermon at Benares", "The Proposal", "Poems: Dust of Snow, Fire and Ice, A Tiger in the Zoo", "Grammar & Writing"]
+        },
+        {
+          "subject": "Hindi (Kshitij)",
+          "topics": ["पद (सूरदास)", "राम-लक्ष्मण-परशुराम संवाद", "आत्मकथ्य", "उत्साह", "अट नहीं रही है", "यह दंतुरित मुसकान", "फसल", "संगतकार", "नेताजी का चश्मा", "बालगोबिन भगत", "लखनवी अंदाज़", "एक कहानी यह भी", "नौबतखाने में इबादत", "संस्कृति"]
+        },
+        {
+          "subject": "Marathi (Aksharbharati)",
+          "topics": ["तू बुद्धी दे", "संतवाणी", "शाल", "उपास", "दोन दिवस", "चुडीवाला", "फूटप्रिंट्स", "ऊर्जाशक्तीचा जागर", "औक्षण", "रंग साहित्याचे", "जंगल डायरी"]
+        }
+      ],
+      "features": [
+        "Board pattern practice",
+        "Marking scheme understanding",
+        "Answer writing skills",
+        "Practical preparation",
+        "Stream selection counseling"
+      ],
+      "schedule": "Monday to Saturday, 3 hours/day"
+    },
+    {
+      "id": "iit-jee-foundation",
+      "title": "IIT-JEE Foundation",
+      "shortDescription": "Build strong foundation for IIT-JEE with advanced Physics, Chemistry & Mathematics",
+      "description": "Our IIT-JEE Foundation course is designed for students in classes 8th-10th who aspire to crack India's toughest engineering entrance exam. We focus on building strong fundamentals, advanced problem-solving skills, and early preparation for JEE.",
+      "image": "/courses/jee-foundation.png",
+      "duration": "2-3 Years Program",
+      "eligibility": "8th-10th Standard Students",
+      "batchSize": "15-20 Students",
+      "category": "Foundation",
+      "highlights": [
+        "Conceptual clarity from basics to advanced",
+        "NCERT + Competitive level coverage",
+        "Regular problem-solving sessions",
+        "Monthly tests and assessments",
+        "JEE pattern practice questions",
+        "Expert faculty with IIT background"
+      ],
+      "syllabus": [
+        {
+          "subject": "Physics",
+          "topics": ["Mechanics (Kinematics, Laws of Motion)", "Heat & Thermodynamics", "Optics (Ray & Wave)", "Electricity & Magnetism", "Modern Physics", "Problem Solving Techniques"]
+        },
+        {
+          "subject": "Chemistry",
+          "topics": ["Physical Chemistry (Mole Concept, Atomic Structure)", "Organic Chemistry (Nomenclature, GOC)", "Inorganic Chemistry (Periodic Table, Bonding)", "Chemical Reactions", "Analytical Chemistry"]
+        },
+        {
+          "subject": "Mathematics",
+          "topics": ["Algebra (Polynomials, Quadratics)", "Trigonometry", "Coordinate Geometry", "Calculus Basics", "Vectors", "Problem Solving", "Number Theory"]
+        }
+      ],
+      "features": [
+        "Small batch for personalized attention",
+        "Advanced problem-solving techniques",
+        "Regular mock tests",
+        "Doubt clearing sessions",
+        "Study material and practice sheets"
+      ],
+      "schedule": "Monday to Saturday, 4-5 hours/day"
+    },
+    {
+      "id": "neet-foundation",
+      "title": "NEET Foundation",
+      "shortDescription": "Early foundation for medical entrance with Biology, Physics & Chemistry",
+      "description": "Our NEET Foundation course prepares aspiring doctors in classes 8th-10th with strong conceptual understanding in Biology, Physics, and Chemistry. We emphasize NCERT mastery and competitive exam pattern preparation.",
+      "image": "/courses/neet-foundation.png",
+      "duration": "2-3 Years Program",
+      "eligibility": "8th-10th Standard Students",
+      "batchSize": "15-20 Students",
+      "category": "Foundation",
+      "highlights": [
+        "NCERT mastery for strong foundation",
+        "Biology diagram practice sessions",
+        "NEET pattern questions",
+        "Regular revision classes",
+        "Medical aptitude development",
+        "Experienced medical background faculty"
+      ],
+      "syllabus": [
+        {
+          "subject": "Physics",
+          "topics": ["Mechanics", "Heat", "Light & Optics", "Electricity", "Modern Physics", "Numerical Problems"]
+        },
+        {
+          "subject": "Chemistry",
+          "topics": ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry", "Biochemistry Basics", "Chemical Reactions"]
+        },
+        {
+          "subject": "Biology",
+          "topics": ["Cell Biology", "Plant Physiology", "Human Physiology", "Genetics Basics", "Ecology", "Evolution", "Diversity of Life"]
+        }
+      ],
+      "features": [
+        "Focus on diagram-based questions",
+        "Medical terminology introduction",
+        "Biology lab practical sessions",
+        "NCERT line-by-line coverage",
+        "Regular assessments and feedback"
+      ],
+      "schedule": "Monday to Saturday, 4-5 hours/day"
+    },
+    {
+      "id": "mhtcet-pcm-foundation",
+      "title": "MHT-CET (PCM) Foundation",
+      "shortDescription": "Maharashtra CET engineering foundation for 8th-10th students",
+      "description": "Our MHT-CET PCM Foundation course is designed for students preparing early for Maharashtra Common Entrance Test. We focus on Physics, Chemistry, and Mathematics with state board alignment.",
+      "image": "/courses/mhtcet-pcm-foundation.png",
+      "duration": "2-3 Years Program",
+      "eligibility": "8th-10th Standard Students",
+      "batchSize": "20-25 Students",
+      "category": "Foundation",
+      "highlights": [
+        "Maharashtra board aligned syllabus",
+        "MHT-CET pattern introduction",
+        "Speed and accuracy training",
+        "Regular practice sessions",
+        "Formula shortcuts and tricks",
+        "Bilingual teaching support"
+      ],
+      "syllabus": [
+        {
+          "subject": "Physics",
+          "topics": ["Mechanics", "Thermal Physics", "Electromagnetism", "Wave Motion", "Modern Physics"]
+        },
+        {
+          "subject": "Chemistry",
+          "topics": ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry", "Analytical Chemistry"]
+        },
+        {
+          "subject": "Mathematics",
+          "topics": ["Algebra", "Calculus Basics", "Trigonometry", "Coordinate Geometry", "Statistics", "Probability"]
+        }
+      ],
+      "features": [
+        "State board focus with CET preparation",
+        "Regular tests and assessments",
+        "Formula booklets provided",
+        "Marathi medium available",
+        "Career guidance sessions"
+      ],
+      "schedule": "Monday to Saturday, 4-5 hours/day"
+    },
+    {
+      "id": "mhtcet-pcb-foundation",
+      "title": "MHT-CET (PCB) Foundation",
+      "shortDescription": "Maharashtra CET medical foundation for 8th-10th students",
+      "description": "Our MHT-CET PCB Foundation course prepares students early for Maharashtra medical entrance. We cover Physics, Chemistry, and Biology with board syllabus alignment.",
+      "image": "/courses/mhtcet-pcb-foundation.png",
+      "duration": "2-3 Years Program",
+      "eligibility": "8th-10th Standard Students",
+      "batchSize": "20-25 Students",
+      "category": "Foundation",
+      "highlights": [
+        "Maharashtra board aligned",
+        "Biology diagram mastery",
+        "MHT-CET pattern practice",
+        "Medical college guidance",
+        "Regular assessments",
+        "Bilingual teaching"
+      ],
+      "syllabus": [
+        {
+          "subject": "Physics",
+          "topics": ["Mechanics", "Thermodynamics", "Waves", "Electromagnetism", "Modern Physics"]
+        },
+        {
+          "subject": "Chemistry",
+          "topics": ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry", "Biochemistry"]
+        },
+        {
+          "subject": "Biology",
+          "topics": ["Cell Biology", "Plant Sciences", "Human Physiology", "Genetics", "Biotechnology", "Ecology"]
+        }
+      ],
+      "features": [
+        "State board focus",
+        "Diagram practice sessions",
+        "Medical terminology",
+        "Marathi/English medium",
+        "Career counseling"
+      ],
+      "schedule": "Monday to Saturday, 4-5 hours/day"
+    },
+    {
+      "id": "nda-foundation",
+      "title": "NDA Foundation",
+      "shortDescription": "Defence services exam foundation for 8th-10th students",
+      "description": "Our NDA Foundation course prepares students for National Defence Academy exam. We focus on Mathematics, Science, and General Knowledge with emphasis on defence services aptitude.",
+      "image": "/courses/nda-foundation.png",
+      "duration": "2-3 Years Program",
+      "eligibility": "8th-10th Standard Students",
+      "batchSize": "20-25 Students",
+      "category": "Foundation",
+      "highlights": [
+        "NDA exam pattern introduction",
+        "Mathematics problem-solving",
+        "General Knowledge sessions",
+        "Physical fitness guidance",
+        "Personality development",
+        "Defence services orientation"
+      ],
+      "syllabus": [
+        {
+          "subject": "Mathematics",
+          "topics": ["Algebra", "Trigonometry", "Geometry", "Calculus Basics", "Statistics", "Problem Solving"]
+        },
+        {
+          "subject": "Science",
+          "topics": ["Physics Fundamentals", "Chemistry Basics", "Biology Essentials", "Scientific Reasoning"]
+        },
+        {
+          "subject": "General Knowledge",
+          "topics": ["Current Affairs", "History", "Geography", "Polity", "Defence Knowledge", "General Science"]
+        }
+      ],
+      "features": [
+        "NDA pattern tests",
+        "Leadership skill development",
+        "Communication skills",
+        "Current affairs classes",
+        "Mock interview preparation"
+      ],
+      "schedule": "Monday to Saturday, 4-5 hours/day"
+    },
+    {
+      "id": "iiser-foundation",
+      "title": "IISER Foundation",
+      "shortDescription": "Research science foundation for 8th-10th students",
+      "description": "Our IISER Foundation course is designed for students aspiring to pursue research in science. We provide advanced concepts in Physics, Chemistry, Biology, and Mathematics with emphasis on analytical thinking.",
+      "image": "/courses/iiser-foundation.png",
+      "duration": "2-3 Years Program",
+      "eligibility": "8th-10th Standard Students",
+      "batchSize": "15-20 Students",
+      "category": "Foundation",
+      "highlights": [
+        "Advanced science concepts",
+        "Research methodology basics",
+        "Analytical problem solving",
+        "Scientific aptitude development",
+        "Lab-based learning",
+        "Expert faculty with research background"
+      ],
+      "syllabus": [
+        {
+          "subject": "Physics",
+          "topics": ["Advanced Mechanics", "Thermodynamics", "Electromagnetism", "Optics", "Modern Physics", "Experimental Physics"]
+        },
+        {
+          "subject": "Chemistry",
+          "topics": ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry", "Analytical Chemistry", "Chemical Research Methods"]
+        },
+        {
+          "subject": "Biology",
+          "topics": ["Cell Biology", "Molecular Biology", "Genetics", "Ecology", "Evolution", "Research Techniques"]
+        },
+        {
+          "subject": "Mathematics",
+          "topics": ["Advanced Algebra", "Calculus", "Statistics", "Mathematical Modeling", "Problem Solving"]
+        }
+      ],
+      "features": [
+        "Research-oriented approach",
+        "Lab experiments and projects",
+        "Scientific paper reading",
+        "Aptitude test preparation",
+        "Career guidance for research"
+      ],
+      "schedule": "Monday to Saturday, 4-5 hours/day"
+    }
+  ]
+}

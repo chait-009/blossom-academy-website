@@ -1,4 +1,5 @@
 import { Phone, MapPin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -21,23 +22,20 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              {["Home", "About", "Courses", "Why Us", "Contact"].map((l) => (
-                <li key={l}>
-                  <a href={`#${l.toLowerCase().replace(" ", "-")}`} className="hover:text-secondary transition-colors">{l}</a>
-                </li>
-              ))}
+              <li><Link to="/" className="hover:text-secondary transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-secondary transition-colors">About</Link></li>
+              <li><Link to="/courses" className="hover:text-secondary transition-colors">Courses</Link></li>
+              <li><Link to="/contact" className="hover:text-secondary transition-colors">Contact</Link></li>
             </ul>
           </div>
 
-          {/* Courses */}
+          {/* Legal */}
           <div>
-            <h4 className="font-semibold mb-4">Programs</h4>
+            <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              {["8th–10th SSC/CBSE", "11th–12th Regular/Integrated", "MHT-CET", "IIT-JEE", "NEET", "NDA"].map((c) => (
-                <li key={c}>
-                  <a href="#courses" className="hover:text-secondary transition-colors">{c}</a>
-                </li>
-              ))}
+              <li><Link to="/privacy-policy" className="hover:text-secondary transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/refund-policy" className="hover:text-secondary transition-colors">Refund Policy</Link></li>
+              <li><Link to="/terms-and-conditions" className="hover:text-secondary transition-colors">Terms & Conditions</Link></li>
             </ul>
           </div>
 
