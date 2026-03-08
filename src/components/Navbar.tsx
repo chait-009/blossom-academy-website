@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import RequestCallbackDialog from "@/components/RequestCallbackDialog";
 
 const navLinks = [
@@ -16,13 +16,42 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [callbackOpen, setCallbackOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Handle hash scrolling after navigation
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      // Small delay to let DOM render
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          const navHeight = 64;
+          const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
+          window.scrollTo({ top, behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, [location]);
 
   const handleNavClick = (href: string) => {
     setOpen(false);
+
     if (href.startsWith("/#")) {
+      const hash = href.replace("/", "");
+      const id = href.replace("/#", "");
+
       if (location.pathname === "/") {
-        const el = document.getElementById(href.replace("/#", ""));
-        el?.scrollIntoView({ behavior: "smooth" });
+        // Same page — just scroll
+        const el = document.getElementById(id);
+        if (el) {
+          const navHeight = 64;
+          const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
+          window.scrollTo({ top, behavior: "smooth" });
+        }
+      } else {
+        // Different page — navigate then scroll via useEffect
+        navigate("/" + hash);
       }
     }
   };
@@ -30,14 +59,13 @@ const Navbar = () => {
   const renderLink = (l: { label: string; href: string }) => {
     if (l.href.startsWith("/#")) {
       return (
-        <Link
+        <button
           key={l.href}
-          to={l.href}
           onClick={() => handleNavClick(l.href)}
           className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
         >
           {l.label}
-        </Link>
+        </button>
       );
     }
     return (
@@ -77,16 +105,26 @@ const Navbar = () => {
 
         {open && (
           <div className="md:hidden bg-background border-b border-border px-4 pb-4 space-y-3">
-            {navLinks.map((l) => (
-              <Link
-                key={l.href}
-                to={l.href}
-                onClick={() => setOpen(false)}
-                className="block text-sm font-medium text-foreground/80 hover:text-primary py-2"
-              >
-                {l.label}
-              </Link>
-            ))}
+            {navLinks.map((l) =>
+              l.href.startsWith("/#") ? (
+                <button
+                  key={l.href}
+                  onClick={() => handleNavClick(l.href)}
+                  className="block text-sm font-medium text-foreground/80 hover:text-primary py-2 w-full text-left"
+                >
+                  {l.label}
+                </button>
+              ) : (
+                <Link
+                  key={l.href}
+                  to={l.href}
+                  onClick={() => setOpen(false)}
+                  className="block text-sm font-medium text-foreground/80 hover:text-primary py-2"
+                >
+                  {l.label}
+                </Link>
+              )
+            )}
             <Button onClick={() => { setOpen(false); setCallbackOpen(true); }} className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold">
               Request Callback
             </Button>

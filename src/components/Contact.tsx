@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, MapPin, Instagram, Mail, ArrowRight, ArrowLeft } from "lucide-react";
+import { Phone, MapPin, Instagram, Mail, Youtube, Facebook, ArrowRight, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,6 +8,45 @@ import { courses } from "@/data/courseData";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const courseOptions = courses.map((c) => c.title);
+
+const contactInfo = [
+  {
+    icon: Phone,
+    title: "Call Us",
+    content: (
+      <>
+        <a href="tel:9922197616" className="text-sm text-muted-foreground hover:text-primary transition-colors">99221 97616</a>
+        <span className="text-muted-foreground text-sm"> / </span>
+        <a href="tel:9922197709" className="text-sm text-muted-foreground hover:text-primary transition-colors">99221 97709</a>
+      </>
+    ),
+  },
+  {
+    icon: Mail,
+    title: "Email Us",
+    content: (
+      <div className="space-y-0.5">
+        <a href="mailto:contact@blossomscienceacademy.in" className="block text-sm text-muted-foreground hover:text-primary transition-colors">contact@blossomscienceacademy.in</a>
+        <a href="mailto:admission@blossomscienceacademy.in" className="block text-sm text-muted-foreground hover:text-primary transition-colors">admission@blossomscienceacademy.in</a>
+        <a href="mailto:blossomscienceacademy@gmail.com" className="block text-sm text-muted-foreground hover:text-primary transition-colors">blossomscienceacademy@gmail.com</a>
+      </div>
+    ),
+  },
+  {
+    icon: MapPin,
+    title: "Visit Us",
+    content: (
+      <p className="text-sm text-muted-foreground">1st Floor, Aarya Associate, Jakat Naka Walhekarwadi corner, near Shri Fattechand Jain School & RMD International School, Chinchwad.</p>
+    ),
+  },
+];
+
+const socialLinks = [
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/blossom_science_academy/" },
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/blossomscienceacademy" },
+  { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@blossomscienceacademy" },
+  { icon: Mail, label: "Gmail", href: "mailto:blossomscienceacademy@gmail.com" },
+];
 
 const Contact = () => {
   const { toast } = useToast();
@@ -136,38 +175,38 @@ const Contact = () => {
           <ScrollReveal delay={0.2}>
             <div className="space-y-8">
               <div className="space-y-5">
-                <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Phone className="h-5 w-5 text-primary" />
+                {contactInfo.map((item) => (
+                  <div key={item.title} className="flex items-start gap-4">
+                    <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                      <item.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">{item.title}</p>
+                      {item.content}
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Call Us</p>
-                    <a href="tel:9922197616" className="text-sm text-muted-foreground hover:text-primary">99221 97616</a>
-                    <span className="text-muted-foreground text-sm"> / </span>
-                    <a href="tel:9922197709" className="text-sm text-muted-foreground hover:text-primary">99221 97709</a>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <MapPin className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Visit Us</p>
-                    <p className="text-sm text-muted-foreground">1st Floor, Aarya Associate, Jakat Naka Walhekarwadi corner, near Shri Fattechand Jain School & RMD International School, Chinchwad.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Instagram className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Follow Us</p>
-                    <a href="https://www.instagram.com/blossom_science_academy/" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary">
-                      @blossom_science_academy
+                ))}
+              </div>
+
+              {/* Social Media */}
+              <div>
+                <p className="font-semibold text-foreground mb-3">Follow Us</p>
+                <div className="flex items-center gap-3">
+                  {socialLinks.map((s) => (
+                    <a
+                      key={s.label}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                      aria-label={s.label}
+                    >
+                      <s.icon className="h-5 w-5 text-primary" />
                     </a>
-                  </div>
+                  ))}
                 </div>
               </div>
+
               <div className="rounded-xl overflow-hidden border border-border shadow-sm">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d236.29880662338107!2d73.77547129142962!3d18.628921771071127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1772904698924!5m2!1sen!2sin"
