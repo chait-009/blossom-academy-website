@@ -5,17 +5,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
-const courseOptions = [
-  "8th–10th SSC Board",
-  "8th–10th CBSE Board",
-  "11th–12th Regular",
-  "11th–12th Integrated",
-  "Foundation Program",
-  "MHT-CET Preparation",
-  "IIT-JEE Preparation",
-  "NEET Preparation",
-  "NDA Preparation",
-];
+import { courses } from "@/data/courseData";
+
+const courseOptions = courses.map((c) => c.title);
 
 const Contact = () => {
   const { toast } = useToast();

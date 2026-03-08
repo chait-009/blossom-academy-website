@@ -1,19 +1,11 @@
-import { BookOpen, FlaskConical, Atom, Microscope, Shield, Rocket, GraduationCap, Brain, Swords } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const courses = [
-  { icon: BookOpen, title: "8th–10th SSC Board", description: "Comprehensive coaching for Maharashtra SSC Board with focus on Science and Maths fundamentals." },
-  { icon: GraduationCap, title: "8th–10th CBSE Board", description: "Structured CBSE coaching with NCERT-aligned curriculum and regular assessments." },
-  { icon: Brain, title: "11th–12th Regular", description: "In-depth subject coaching for Science stream (PCM/PCB) with board exam preparation." },
-  { icon: Rocket, title: "11th–12th Integrated", description: "Board + competitive exam preparation in an integrated format for maximum efficiency." },
-  { icon: Atom, title: "Foundation Program", description: "Early preparation program building strong fundamentals for future competitive exams." },
-  { icon: FlaskConical, title: "MHT-CET Preparation", description: "Targeted preparation for Maharashtra CET with extensive practice and mock tests." },
-  { icon: Microscope, title: "IIT-JEE Preparation", description: "Rigorous coaching for JEE Main & Advanced with problem-solving and concept clarity." },
-  { icon: Shield, title: "NEET Preparation", description: "Focused NEET coaching covering Physics, Chemistry, and Biology with regular testing." },
-  { icon: Swords, title: "NDA Preparation", description: "Comprehensive NDA exam preparation covering Mathematics and General Ability." },
-];
+import { Link } from "react-router-dom";
+import { courses } from "@/data/courseData";
+import { Clock, Users, ArrowRight } from "lucide-react";
 
 const Courses = () => {
+  const featured = courses.slice(0, 6);
+
   return (
     <section id="courses" className="py-20">
       <div className="container mx-auto px-4">
@@ -26,23 +18,30 @@ const Courses = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {courses.map((c) => (
-            <div
-              key={c.title}
-              className="bg-card rounded-xl p-6 border border-border shadow-sm hover:shadow-lg hover:border-primary/30 transition-all group"
-            >
-              <div className="inline-flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors mb-4">
-                <c.icon className="h-6 w-6 text-primary" />
+          {featured.map((c) => (
+            <div key={c.id} className="bg-card rounded-xl p-6 border border-border shadow-sm hover:shadow-lg hover:border-primary/30 transition-all group flex flex-col">
+              <span className="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full w-fit">{c.category}</span>
+              <h3 className="font-semibold text-lg text-foreground mt-3 mb-2">{c.title}</h3>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed flex-1">{c.shortDescription}</p>
+              <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
+                <span className="flex items-center gap-1"><Clock className="h-3.5 w-3.5" />{c.duration}</span>
+                <span className="flex items-center gap-1"><Users className="h-3.5 w-3.5" />{c.batchSize}</span>
               </div>
-              <h3 className="font-semibold text-lg text-foreground mb-2">{c.title}</h3>
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{c.description}</p>
-              <a href="#contact">
-                <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Enquire Now
+              <Link to={`/courses/${c.id}`}>
+                <Button variant="outline" size="sm" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  View Details <ArrowRight className="h-4 w-4 ml-1" />
                 </Button>
-              </a>
+              </Link>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <Link to="/courses">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
+              View All Courses <ArrowRight className="h-5 w-5 ml-2" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
